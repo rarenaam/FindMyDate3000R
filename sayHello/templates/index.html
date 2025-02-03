@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FindMyDate3000</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	</head>
+	<body>
+		<img src="https://image.bz-berlin.de/data/uploads/2016/10/57843030_1476433426-768x432.jpg">
+		<br>
+		<form action="/FindMyDate3000" method="post">
+			{% for message in get_flashed_messages() %}
+				<p> {{ message }} </p>
+			{% endfor %}
+			<br>
+			<input type="text" name="name_input" placeholder="Enter your name">
+			<br>
+			<input type="submit" value="I want a relationship with Eloise" id="submitButton">
+		</form>
+	</body>
+</html>
