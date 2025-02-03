@@ -1,0 +1,67 @@
+body {
+    background-color: #FFC0CB;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: 'Shanti', sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+img {
+    margin: 60px 0 30px 0;
+    width: 500px;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Shanti', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#submitButton {
+    background-color: palevioletred;
+    color: white;
+    width: 500px;
+}
+
+#submitButton:hover {
+    background-color: mediumvioletred;
+    cursor: pointer;
+}
+
+.heart {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin: 50px;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    left: 25px;
+    top: 0;
+}
